@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>bootstrap-Glyphicons</title>
+		<link href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css"/>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<!-- 图标参考https://v3.bootcss.com/components/ -->
+		<div class="row">
+			<h3 class="text-center">Glyphicons 字体图标</h3>
+			<div class="col-md-3">
+				<h4 class="text-center">基本用法</h4>
+				<p>图标类不能和其它组件直接联合使用。它们不能在同一个元素上与其他类共同存在。应该创建一个嵌套的 span 标签，并将图标类应用到这个 <span> 标签上。</p>
+				<div>
+					<span class="glyphicon glyphicon-search"></span>
+					<button type="button" class="btn btn-default">
+						<span class="glyphicon glyphicon-align-justify"></span>
+					</button>
+					<button type="button" class="btn btn-default">
+						<span class="glyphicon glyphicon-align-left"></span>
+					</button>
+					<button type="button" class="btn btn-default">
+						<span class="glyphicon glyphicon-align-center"></span>
+					</button>
+					<button type="button" class="btn btn-default">
+						<span class="glyphicon glyphicon-align-right"></span>
+					</button>
+				</div>
+				<p>只对内容为空的元素起作用图标类只能应用在不包含任何文本内容或子元素的元素上。</p>
+				<div>
+					<button type="button" class="btn btn-default btn-lg">
+						<span class="glyphicon glyphicon-asterisk"></span> S
+					</button>
+					<button type="button" class="btn btn-default btn-md">
+						<span class="glyphicon glyphicon-asterisk"></span>S
+					</button>
+					<button type="button" class="btn btn-default btn-sm">
+						<span class="glyphicon glyphicon-asterisk"></span> S
+					</button>
+					<button type="button" class="btn btn-default btn-xs">
+						<span class="glyphicon glyphicon-asterisk"></span> S
+					</button>
+				</div>
+				<div>
+					<p>应用在超链接上</p>
+					<a href="https://www.runoob.com/try/demo_source/bootstrap3-glyph-icons.htm" class="btn btn-default" target="_blank">
+						<span class="glyphicon glyphicon-arrow-right"></span>
+					</a>
+				</div>
+			</div>
+			<div></div>
+		</div>
+	</body>
+</html>

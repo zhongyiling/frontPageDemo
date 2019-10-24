@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Bootstrp_input_group</title>
+		<link href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css"/>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<h3>输入框组</h3>
+				<p>输入框组。输入框组扩展自 表单控件。使用输入框组，您可以很容易地向基于文本的输入框添加作为前缀和后缀的文本或按钮。通过向输入域添加前缀和后缀的内容，您可以向用户输入添加公共的元素。例如，您可以添加美元符号，或者在 Twitter 用户名前添加 @，或者应用程序接口所需要的其他公共的元素。</p>
+				<ul>向 .form-control 添加前缀或后缀元素的步骤如下：
+					<li>把前缀或后缀元素放在一个带有 class .input-group 的 div 中。</li>
+					<li>接着，在相同的 div 内，在 class 为 .input-group-addon 的 span 内放置额外的内容。</li>
+					<li>把该 span 放置在 input元素的前面或者后面。</li>
+					<li>不要直接向表单组应用输入框组的 class，输入框组是一个孤立的组件。</li>
+				</ul>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<h4>基本用法</h4>
+					<div>
+						<form role="form">
+							<div class="input-group">
+								<span class="input-group-addon glyphicon glyphicon-user"></span>
+								<input type="text"class="form-control" placeholder="username" style="position: relative;top: 1px;"/>	
+							</div>
+							<br>
+							<div class="input-group">
+								<span class="input-group-addon glyphicon glyphicon-user"></span>
+								<input type="text"class="form-control" placeholder="password" style="position: relative;top: 1px;"/>
+							</div>
+							<br>
+							<div class="input-group input-group-lg">
+								<span class="input-group-addon">@</span>
+								<input type="text"class="form-control"/>	
+							</div>
+							<br>
+							<div class="input-group">
+								<span class="input-group-addon">price</span>
+								<input type="text"class="form-control"/>
+								<span class="input-group-addon">$$</span>
+							</div>
+							<br/>
+							<div class="input-group">
+								<span class="input-group-addon">#</span>
+								<input type="text"class="form-control"/>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<h4>复选框和单选插件</h4>
+					<div>
+						<form role="form">
+							<div class="input-group">
+								<span class="input-group-addon">
+									<input type="checkbox" /></span>
+								<input type="text" class="form-control"/>
+							</div>
+							<br>
+							<div class="input-group">
+								<span class="input-group-addon">
+									<input type="radio"/>
+								</span>
+								<input type="text" class="form-control"/>
+							</div>
+						</form>
+						<br>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<h4>按钮插件</h4>
+					<p>也可以把按钮作为输入框组的前缀或者后缀元素，这个时候您就不是添加 .input-group-addon class，您需要使用 class .input-group-btn 来包裹按钮。这是必需的，因为默认的浏览器样式不会被重写。</p>
+					<div>
+						<form role="form">
+							<div class="input-group">
+								<span class="input-group-btn">
+									<button type="button" class="btn btn-primary">GO!</button>
+								</span>
+								<input type="text" class="form-control"/>
+							</div>
+							<br/>
+							<div class="input-group">
+								<input type="text" class="form-control"/>
+								<span class="input-group-btn">
+									<button type="button" class="btn btn-primary">GO!</button>
+								</span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

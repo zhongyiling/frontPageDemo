@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Bootstrp_nav</title>
+		<link href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css"/>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<h4>标签式的导航菜单</h4>
+					<p>创建一个标签式的导航菜单：1.以一个带有 class .nav 的无序列表开始。2.添加 class .nav-tabs。</p>
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">JAVA</a></li>
+						<li><a href="#">Python</a></li>
+						<li><a href="#">C#</a></li>
+						<li><a href="#">C</a></li>
+						<li><a href="#">CSS</a></li>
+					</ul>
+					<br />
+					<h4>垂直的胶囊式导航菜单</h4>
+					<p>可以在使用 class .nav、.nav-pills 的同时使用 class .nav-stacked，让胶囊垂直堆叠。</p>
+					<ul class="nav nav-pills nav-stacked">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">JAVA</a></li>
+						<li><a href="#">Python</a></li>
+						<li><a href="#">C#</a></li>
+						<li><a href="#">C</a></li>
+						<li><a href="#">CSS</a></li>
+					</ul>
+					<br/>
+					<h4>两端对齐的导航</h4>
+					<p>可以在屏幕宽度大于 768px 时，通过在分别使用 .nav、.nav-tabs 或 .nav、.nav-pills 的同时使用 class .nav-justified，让标签式或胶囊式导航菜单与父元素等宽。在更小的屏幕上，导航链接会堆叠</p>
+					<ul class="nav nav-pills nav-justified">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">JAVA</a></li>
+						<li><a href="#">Python</a></li>
+						<li><a href="#">C#</a></li>
+						<li><a href="#">C</a></li>
+						<li><a href="#">CSS</a></li>
+					</ul>
+					<br/>
+					<ul class="nav nav-tabs nav-justified">
+					  <li class="active"><a href="#">Home</a></li>
+					  <li><a href="#">SVN</a></li>
+					  <li><a href="#">iOS</a></li>
+					  <li><a href="#">VB.Net</a></li>
+					  <li><a href="#">Java</a></li>
+					  <li><a href="#">PHP</a></li>
+					</ul>
+				</div>
+				<div class="col-md-5">
+					<div>
+						<h4>下拉菜单</h4>
+						<p>向标签添加下拉菜单的步骤如下：1.以一个带有 class .nav 的无序列表开始。2.添加 class .nav-tabs。3.添加带有 .dropdown-menu class 的无序列表。</p>
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#">Home</a></li>
+							<li><a href="#">JAVA</a></li>
+							<li><a href="#">Python</a></li>
+							<li><a href="#">C#</a></li>
+							<li><a href="#">C</a></li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">CSS<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Swing</a></li>
+									<li><a href="#">jMeter</a></li>
+									<li><a href="#">EJB</a></li>
+									<li class="divider"></li>
+									<li><a href="#">分离的链接</a></li>
+								</ul>
+							</li>
+						</ul>
+						<br/>
+						<ul class="nav nav-pills">
+							<li class="active"><a href="#">Home</a></li>
+							<li><a href="#">JAVA</a></li>
+							<li><a href="#">Python</a></li>
+							<li><a href="#">C#</a></li>
+							<li><a href="#">C</a></li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#">CSS<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Swing</a></li>
+									<li><a href="#">jMeter</a></li>
+									<li><a href="#">EJB</a></li>
+									<li class="divider"></li>
+									<li><a href="#">分离的链接</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

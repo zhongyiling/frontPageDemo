@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Bootstrap-表格</title>
+		<link href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css"/>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<style>
+		.width-1{
+			width: 300px;
+		}
+		.height-1{
+			height: 300px;
+		}
+	</style>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<h4>1.基本的表格</h4>
+					<p>只带有内边距（padding）和水平分割的基本表，请添加 class .table</p>
+					<table class="table">
+						<!-- 表格的名称 -->
+						<caption>基本的表格</caption>
+						<!-- 表头 -->
+						<thead>
+							<tr>
+								<th>城市</th>
+								<th>天气</th>
+							</tr>	
+						</thead>
+						<!-- 表格正文 -->
+						<tbody>
+							<tr>
+								<td>北京</td>
+								<td>晴天</td>
+							</tr>
+							<tr>
+								<td>上海</td>
+								<td>多云</td>
+							</tr>
+							<tr>
+								<td>深圳</td>
+								<td>小雨</td>
+							</tr>	
+						</tbody>
+					</table>
+				</div>
+				<div class="col-md-2">
+					<h4>2.条纹表格布局</h4>
+					<p>相邻两行颜色不一样，请添加 class .table-striped</p>
+					<table class="table table-striped">
+						<!-- 表格的名称 -->
+						<caption>条纹表格布局</caption>
+						<!-- 表头 -->
+						<thead>
+							<tr>
+								<th>城市</th>
+								<th>天气</th>
+							</tr>	
+						</thead>
+						<!-- 表格正文 -->
+						<tbody>
+							<tr>
+								<td>北京</td>
+								<td>晴天</td>
+							</tr>
+							<tr>
+								<td>上海</td>
+								<td>多云</td>
+							</tr>
+							<tr>
+								<td>深圳</td>
+								<td>小雨</td>
+							</tr>	
+						</tbody>
+					</table>
+				</div>
+				<div class="col-md-2">
+					<h4>3.边框表格</h4>
+					<p>通过添加 .table-bordered class，您将看到每个元素周围都有边框，且占整个表格是圆角的</p>
+					<table class="table table-striped table-bordered">
+						<!-- 表格的名称 -->
+						<caption>边框表格</caption>
+						<!-- 表头 -->
+						<thead>
+							<tr>
+								<th>城市</th>
+								<th>天气</th>
+							</tr>	
+						</thead>
+						<!-- 表格正文 -->
+						<tbody>
+							<tr>
+								<td>北京</td>
+								<td>晴天</td>
+							</tr>
+							<tr>
+								<td>上海</td>
+								<td>多云</td>
+							</tr>
+							<tr>
+								<td>深圳</td>
+								<td>小雨</td>
+							</tr>	
+						</tbody>
+					</table>
+				</div>
+				<div class="col-md-2">
+					<h4>4.悬停表格</h4>
+					<p>通过添加 .table-hover class，当指针悬停在行上时会出现浅灰色背景</p>
+					<table class="table table-striped table-bordered table-hover">
+						<!-- 表格的名称 -->
+						<caption>悬停表格</caption>
+						<!-- 表头 -->
+						<thead>
+							<tr>
+								<th>城市</th>
+								<th>天气</th>
+							</tr>	
+						</thead>
+						<!-- 表格正文 -->
+						<tbody>
+							<tr>
+								<td>北京</td>
+								<td>晴天</td>
+							</tr>
+							<tr>
+								<td>上海</td>
+								<td>多云</td>
+							</tr>
+							<tr>
+								<td>深圳</td>
+								<td>小雨</td>
+							</tr>	
+						</tbody>
+					</table>
+				</div>
+				<div class="col-md-2">
+					<h4>5.精简表格</h4>
+					<p>通过添加 .table-condensed class，行内边距（padding）被切为两半，以便让表看起来更紧凑</p>
+					<table class="table table-striped table-bordered table-hover table-condensed">
+						<!-- 表格的名称 -->
+						<caption>精简表格</caption>
+						<!-- 表头 -->
+						<thead>
+							<tr>
+								<th>城市</th>
+								<th>天气</th>
+							</tr>	
+						</thead>
+		 				<!-- 表格正文 -->
+						<tbody>
+							<tr>
+								<td>北京</td>
+								<td>晴天</td>
+							</tr>
+							<tr>
+								<td>上海</td>
+								<td>多云</td>
+							</tr>
+							<tr>
+								<td>深圳</td>
+								<td>小雨</td>
+							</tr>	
+						</tbody>
+					</table>
+				</div>
+				<div class="col-md-2">
+					<h4>6.状态类</h4>
+					<p>根据不同的状态设置背景颜色</p>
+					<table class="table table-bordered table-hover">
+						<!-- 表格的名称 -->
+						<caption>状态类</caption>
+						<!-- 表头 -->
+						<thead>
+							<tr>
+								<th>编号</th>
+								<th>日期</th>
+								<th>状态</th>
+							</tr>	
+						</thead>
+						<!-- 表格正文 -->
+						<tbody>
+							<!-- on rows <tr> -->
+							<tr class="active">
+								<td>1</td>
+								<td>2018/09/10</td>
+								<td>已激活(active)</td>
+							</tr >
+							<tr class="success">
+								<td>2</td>
+								<td>2018/10/19</td>
+								<td>审核通过(success)</td>
+							</tr>
+							<tr class="warning">
+								<td>3</td>
+								<td>2018/12/19</td>
+								<td>撤销(warning)</td>
+							</tr>
+							<tr class="info">
+								<td>4</td>
+								<td>2018/12/19</td>
+								<td>审核中(info)</td>
+							</tr>
+							<tr class="danger">
+								<td>5</td>
+								<td>2018/12/19</td>
+								<td>拒绝(danger)</td>
+							</tr>
+							<!-- on cells <th> or <td>-->
+							<tr>
+								<td class="warning">warning</td>
+								<td class="info">info</td>
+								<td class="danger">danger</td>
+							</tr>
+							<tr>
+								<td class="active">active</td>
+								<td class="success">success</td>
+								<td class="sr-only">.sr-only隐藏的文本 -- 来表达出来</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 .height-1">
+					<h4>7.响应式表格</h4>
+					<p>通过把任意的 .table 包在 .table-responsive class 内，您可以让表格水平滚动以适应小型设备（小于 768px）。当在大于 768px 宽的大型设备上查看时，您将看不到任何的差别。</p>
+					<table class="table table-responsive">
+						<!-- 表格的名称 -->
+						<caption>响应式表格</caption>
+						<!-- 表头 -->
+						<thead>
+							<tr>
+								<th>城市</th>
+								<th>天气</th>
+							</tr>	
+						</thead>
+						<!-- 表格正文 -->
+						<tbody>
+							<tr>
+								<td>北京</td>
+								<td>晴天</td>
+							</tr>
+							<tr>
+								<td>上海</td>
+								<td>多云</td>
+							</tr>
+							<tr>
+								<td>深圳</td>
+								<td>小雨</td>
+							</tr>
+							<tr>
+								<td>深圳</td>
+								<td>小雨</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

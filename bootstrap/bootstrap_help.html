@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Bootstrap-help</title>
+		<link href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css"/>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="row">
+			<div class="col-md-3">
+				<h3>文本</h3>
+				<p class="text-muted">class="text-muted":"text-muted" 类的文本样式</p>
+				<p class="text-primary">class="text-primary":"text-primary" 类的文本样式</p>
+				<p class="text-info">class="text-info":"text-info" 类的文本样式</p>
+				<p class="text-success">class="text-success":"text-success" 类的文本样式</p>
+				<p class="text-warning">class="text-warning":"text-warning" 类的文本样式</p>
+				<p class="text-danger">class="text-danger":"text-danger" 类的文本样式</p>		
+			</div>
+			<div class="col-md-3">
+				<h3>背景</h3>
+				<p class="bg-primary input-lg">class="bg-primary":"bg-primary" 的背景色</p>
+				<p class="bg-info input-lg">class="bg-info":"bg-info" 的背景色</p>
+				<p class="bg-success input-lg">class="bg-success":"bg-success"的背景色</p>
+				<p class="bg-warning input-lg">class="bg-warning":"bg-warning"的背景色</p>
+				<p class="bg-danger input-lg">class="bg-danger":"bg-danger"的背景色</p>
+			</div>
+			<div class="col-md-3">
+				<h3>快速浮动</h3>
+				<h4>有浮动的效果</h4>
+				<div class="pull-left">class="pull-left"：向左快速浮动</div>
+				<div class="pull-right">class="pull-right"：向右快速浮动</div>
+				<h4>没有浮动的效果</h4>
+				<div>class="pull-left"：向左快速浮动</div>
+				<div>class="pull-right"：向右快速浮动</div>
+				<h4>.clearfx清除浮动的效果</h4>
+				<div class="clearfix"  style="background: #D8D8D8;border: 1px solid #000;padding: 10px;">
+				  <div class="pull-left" style="background:#58D3F7;">向左快速浮动</div>
+				  <div class="pull-right" style="background: #DA81F5;">向右快速浮动</div>
+				</div>
+				<p>没有清除浮动，子元素脱离文档流，父元素高度塌陷</p>
+				<div style="background: #D8D8D8;border: 1px solid #000;padding: 10px;">
+				  <div class="pull-left" style="background:#58D3F7;">向左快速浮动</div>
+				  <div class="pull-right" style="background: #DA81F5;">向右快速浮动</div>		
+				</div>
+			</div>
+			<div class="col-md-3">
+			<h3>使内容居中</h3>
+			  <p>设置class="center-block"使内容块居中</p>
+			  <div class="center-block" style="width:200px;background-color:#ccc;">class="center-block"</div>
+			  <div style="width:200px;background-color:#ccc;">没有class="center-block"</div>
+		</div>
+		</div>
+		<div class="row">
+			<h3 class="text-center">关闭按钮和三角符号</h3>
+			<div class="col-md-2">
+				<h4>关闭按钮</h4>
+				<button type="button" class="close pull-left" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<div><br></div>
+				<p>关闭图标实例
+				  <button type="button" class="close" aria-hidden="true">
+				    &times;
+				  </button>
+				</p>
+				<div><br><h4>三角符号</h4></div>
+				<span class="caret"></span>
+			</div>
+			<div class="col-md-3">
+				<h4>显示和隐藏内容</h4>
+				<p>可以通过使用 class .show 和 .hidden 来强行设置元素显示或隐藏（包括屏幕阅读器）</p>
+				  <div class="show" style="margin-left:10px;width:300px;background-color:#ccc;">
+				    这是 show class 的实例
+				  </div>
+				  <div class="hidden" style="width:200px;background-color:#ccc;">
+				    这是 hide class 的实例
+				  </div>
+			</div>
+		</div>
+
+	</body>
+</html>
