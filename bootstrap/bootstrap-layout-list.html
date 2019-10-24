@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Bootstrap排版-列表</title>
+		<link href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css"/>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<style>
+		.width-1{
+			width: 300px;
+		}
+		.height-1{
+			height: 300px;
+		}
+	</style>
+	<body>
+		<div class="row">
+			<div class="col-md-2">
+				<h4>1.有序列表</h4>
+				<ol>
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li>Item 3</li>
+					<li>Item 4</li>
+				</ol>
+			</div>
+			<div class="col-md-2">
+				<h4>2.无序列表</h4>
+				<ul>
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li>Item 3</li>
+					<li>Item 4</li>
+				</ul>
+			</div>	
+			<div class="col-md-2">
+				<h4>3.未定义样式列表</h4>
+				<ul class="list-unstyled">
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li>Item 3</li>
+					<li>Item 4</li>
+				</ul>
+			</div>	
+			<div class="col-md-2">
+				<h4>4.内联列表: 	class="list-inline将所有列表项放置同一行</h4>
+				<ul class="list-inline">
+				  <li>Item1</li>
+				  <li>Item2</li>
+				  <li>Item3</li>
+				  <li>Item4</li>
+				</ul>
+			</div>
+			<div class="col-md-2">
+				<h4>6.水平的定义列表</h4>
+				<p>.dl-horizontal 	该类设置了浮动和偏移，应用于"dl" 元素和 "dt" 元素中，</p>
+				<dl class="dl-horizontal">
+					<dt>Description 1</dt>
+					<dd class="text-nowrap" style="text-overflow: ellipsis;overflow: hidden">Item 1Item 1Item 1Item 1Item 1</dd>
+					<dt>Description 2</dt>
+					<dd class="text-nowrap" style="text-overflow: clip;overflow: hidden">Item 2Item 2Item 2Item 2Item 2Item 2Item 2</dd>
+					<dt>Description 3</dt>
+					<dd class="text-nowrap" style="text-overflow: inherit;overflow: hidden">Item 2Item 2Item 2Item 2Item 2Item 2Item 2</dd>
+					<dt>Description 4</dt>
+					<dd class="text-nowrap" style="text-overflow: initial;overflow: hidden">Item 2Item 2Item 2Item 2Item 2Item 2Item 2</dd>
+				</dl>
+			</div>
+			<div class="col-md-2">
+				<h4>5.带有描述的短语列表</h4>
+				<dl>
+					<dt>Description 1</dt>
+					<dd>Item 1</dd>
+					<dt>酸辣土豆丝</dt>
+					<dd>切土豆丝</dd>
+					<dd>炒土豆丝</dd>
+				</dl>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Bootstrap 3 网格结构</title>
+		<link href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css"/>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<style>
+		.row div{
+			height: 50px;
+		}
+	</style>
+	<!-- 下面是 Bootstrap 3 网格的基本结构：
+
+	<div class="container">   
+		<div class="row">      
+			<div class="col-*-*"></div>      
+		<div class="col-*-*"></div>         
+		</div>   
+		<div class="row">...</div>
+	</div>
+	-->
+	<!--           超小设备手机（<768px） 	小型设备平板电脑（≥768px） 	中型设备台式电脑（≥992px） 	大型设备台式电脑（≥1200px） -->
+	<!-- Class 前缀  	.col-xs- 	                  .col-sm- 	                  .col-md-          	.col-lg- -->
+	<body>
+		<p>基本用法</p>
+		<div class="row">
+			<div class="col-md-3" style="background-color: aqua;">这是没有加container的</div>
+			<div class="col-md-6" style="background-color:red;"></div>
+			<div class="col-md-3" style="background-color: blanchedalmond;"></div>
+		</div>
+		<br>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3" style="background-color: aqua;">这是加了ontainer的</div>
+				<div class="col-md-6" style="background-color:red;"></div>
+				<div class="col-md-3" style="background-color: blanchedalmond;"></div>
+			</div>
+		</div>
+		<br>
+		<p>偏移量</p>
+		<!-- 偏移量：
+			为了在大屏幕显示器上使用偏移，请使用 .col-md-offset-* 类。这些类会把一个列的左外边距（margin）增加 * 列，其中 * 范围是从 1 到 11。
+			在下面的实例中，我们有 <div class="col-md-6">..</div>，我们将使用 .col-md-offset-3 class 来居中这个 div。 -->
+		<div class="row">
+			<p>这是一个p标签中的文本这是没有加container的</p>
+			<div class="col-md-2 col-md-offset-1" style="background-color: aqua;">这是没有加container的</div>
+			<div class="col-md-6" style="background-color:red;"></div>
+			<div class="col-md-2" style="background-color: blanchedalmond;"></div>
+		</div>
+		<br>
+		<div class="container">
+			<div class="row">
+				<p>这是一个p标签中的文本这是加了container的</p>
+				<div class="col-md-2 col-md-offset-1" style="background-color: aqua;">这是有加container的</div>
+				<div class="col-md-6" style="background-color:red;"></div>
+				<div class="col-md-2" style="background-color: blanchedalmond;"></div>
+			</div>
+		</div>
+		<br>
+		<p>嵌套网格</p>
+		<!-- 嵌套网格
+		为了在内容中嵌套默认的网格，请添加一个新的 .row，并在一个已有的 .col-md-* 列内添加一组 .col-md-* 列。
+		被嵌套的行应包含一组列，这组列个数不能超过12（其实，没有要求你必须占满12列）。 -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2" style="background-color: aqua;">外层网格</div>
+				<div class="col-md-6" style="background-color:rosybrown;">
+					<div class="row">
+						<div class="col-md-3 col-md-offset-1" style="background-color: bisque;">嵌套网格</div>
+						<div class="col-md-4" style="background-color: blanchedalmond"></div>
+						<div class="col-md-3" style="background-color: beige;"></div>
+					</div>
+				</div>
+				<div class="col-md-2" style="background-color: blanchedalmond;"></div>
+			</div>
+		</div>
+		<br>
+		<p>列排序</p>
+		<!-- 列排序 -->
+		<!-- 您可以很轻易地改变带有 .col-md-push-* 和 .col-md-pull-* 类的内置网格列的顺序，其中 * 范围是从 1 到 11 -->
+		<div class="container">
+			<div class="row">
+				<p>排序前</p>
+				<div class="col-md-2" style="background-color: aqua;"></div>
+				<div class="col-md-6" style="background-color:rosybrown;"></div>
+			</div>
+			<div class="row">
+				<p>排序后</p>
+				<div class="col-md-2 col-md-push-6" style="background-color: aqua;"></div>
+				<div class="col-md-6 col-md-pull-2" style="background-color:rosybrown;"></div>
+			</div>
+		</div>
+		<br>
+		<div class="container">
+		  <div class="row">
+			<div class="col-md">
+			  1 of 2
+			</div>
+			<div class="col-md">
+			  2 of 2
+			</div>
+		  </div>
+		</div>
+<!-- 		<div class="container">
+		  <div class="row justify-content-md-center">
+		    <div class="col-md-auto">
+		      1 of 2
+		    </div>
+		    <div class="col-md-auto">
+		      2 of 2
+		    </div>
+		  </div>
+		  <div class="row">
+		    <div class="col-md-auto">
+		      1 of 3
+		    </div>
+		    <div class="col-md-auto">
+		      2 of 3
+		    </div>
+		    <div class="col-md-auto">
+		      3 of 3
+		    </div>
+		  </div>
+		</div> -->
+	</body>
+</html>
