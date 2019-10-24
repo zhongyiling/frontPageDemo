@@ -1,0 +1,129 @@
+*{
+	/* 设置所有元素以border计算宽度而不是内容 */
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	/* background: rgba(0,0,0,.1); */
+	/* 是的背景颜色改变更加柔和 */
+	-webkit-transition: background 200ms;
+	-o-transition: background 200ms;
+	transition: background 200ms;
+	list-style: none;
+	text-decoration: none;
+}
+a{
+	color: #000000;
+}
+a:hover{
+	color: #DD182B;
+}
+body{
+	font-size: 14px;
+	color: #444;
+	background: #f9f9f9;
+}
+header{
+	width: 1080px;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9{
+	display: block;
+	position: relative;
+	min-height: 1px;
+	float: left;
+}
+.col-1{
+	width: 10%;
+}
+.col-2{
+	width: 20%;
+}
+.col-3{
+	width: 30%;
+}
+.col-5{
+	width: 50%;
+}
+.col-6{
+	width: 60%;
+}
+.login-inner{
+	width: 1080px;
+	height: 500px;
+	margin: 0 auto;
+	background-image: url(../img/blackgroud.png);
+	background-repeat: no-repeat;	
+}
+.login-form{
+	width: 30%;
+	height: 400px;
+	float: right;
+	position: relative;
+	top: 50px;
+	right: 50px;
+	background-color: #FFFFFF;
+}
+.form-group.userName,
+.form-group.password,
+.form-group.loginbtn{
+	margin-bottom: 30px;
+	margin-left: 50px;
+	border: 1px solid rgb(204,204,204);
+	width: 236px;
+	max-height: 36px;
+}
+
+.form-group.checkbox,
+.form-group.login-links{	
+	margin-bottom: 20px;
+	margin-left: 50px;
+	width: 236px;
+	text-align: right;
+}
+.login-title{
+	margin: 35px 0px 35px 20px ;
+	padding-left: 20px;
+	font-size: 25px;
+	font-weight: 900;
+}
+.login-label{
+	width: 34px;
+	height: 34px;
+}
+.name-label{
+	background-image: url(../img/pwd-icons-new.png);
+	background-repeat: no-repeat;
+	border: 0px;
+}
+#userName{
+	display: inline-block;
+	float: right;
+	width: 200px;
+	height: 34px;
+	padding: 3px;
+	border: 0px;
+}
+.password-label{
+	background-image: url(../img/pwd-icons-new.png);
+	background-repeat: no-repeat;
+	border: 0px;
+	background-position-x: -48px;
+}
+#password{
+	display: inline-block;
+	float: right;
+	width: 200px;
+	height: 34px;
+	padding: 3px;
+	border: 0px;
+}
+
